@@ -18,11 +18,6 @@ startButton.addEventListener('click', () => {
   // Retrieve the user-provided number from the input
   let result = parseFloat(inputElement.value);
 
-  // Create a promise that resolves after 2 seconds with the user-provided number
-  const initialPromise = new Promise((resolve) => {
-    setTimeout(() => resolve(userNumber), 2000);
-  });
-
   // Chain promises to perform the specified operations
   delay(2000)
 	  .then(() => {
