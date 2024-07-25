@@ -10,7 +10,7 @@ function delay(ms)
 {
 	return new Promise((resolve) => 
 		{
-           setTimeout(() => resolve(), 2000);
+           setTimeout(() => resolve(), ms);
         });
 }
 // Event listener for button click
